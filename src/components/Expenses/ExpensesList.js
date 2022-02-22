@@ -14,7 +14,7 @@ const ExpensesList = (props) => {
         ))
     }
 
-    if (props.expenseYear === "All") {
+    if (props.expenseYear === "All" && props.allExpense.length > 0) {
         expensesContent = props.allExpense.map((expense) => {
             return (
                 <ExpenseItem
